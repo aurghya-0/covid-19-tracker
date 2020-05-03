@@ -1,4 +1,4 @@
-[![Covid-19 tracker](image.png)]
+![Covid-19 tracker](image.png)
 
 ## Install Project Dependencies
 Go to the project directory and run `npm install`.
