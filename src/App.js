@@ -1,4 +1,5 @@
 import React from 'react';
+import { Typography } from '@material-ui/core';
 
 import { Cards, Chart, CountryPicker } from './components'
 import styles from './App.module.css';
@@ -26,6 +27,7 @@ class App extends React.Component {
         return (
             <div className={styles.container}>
                 <img src={coronaImage} className={styles.image} alt="COVID-19" />
+                <Typography color="textSecondary">Last updated on {new Date(data.lastUpdate).toDateString()}</Typography>
                 <Cards data={data} />
                 <CountryPicker handleCountryChange={this.handleCountryChange} />
                 <Chart data={data} country={country} />
